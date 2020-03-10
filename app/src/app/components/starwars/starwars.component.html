@@ -1,12 +1,25 @@
-<div>
-    <table border="1">
-        <tr *ngFor="let starswars of starswarss">
-            <td>{{starswars.name}}</td>
-            <td>{{starswars.height}}</td>
-            <td>{{starswars.gender}}</td>
-            <td>{{starswars.mass}}</td>
-            <td>{{starswars.omeworld}}</td>
-
-        </tr>
-    </table>
+<div class="row">
+    <div class="col-xl-5 col-lg-9 col-md-8 col-sm-7 col-6" style="background-color:#aaa">
+        <table border="1">
+            <tr *ngFor="let starswars of starswarss">
+                <td>{{starswars.name}}</td>
+                <td>{{starswars.height}}</td>
+                <td>{{starswars.gender}}</td>
+                <td>{{starswars.mass}}</td>
+                <td>{{starswars.omeworld}}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-xl-5 col-lg-3 col-md-4 col-sm-5 col-6" style="background-color:#bbb">
+        <table border="1">
+            <tr *ngFor="let starswars of starswarss2">
+                <td>{{starswars.name}}</td>
+                <td>{{starswars.height}}</td>
+                <td>{{starswars.gender}}</td>
+                <td>{{starswars.mass}}</td>
+                <td>{{starswars.omeworld}}</td>
+            </tr>
+        </table>
+    </div>
 </div>
+

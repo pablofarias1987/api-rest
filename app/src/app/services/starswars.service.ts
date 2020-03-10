@@ -8,13 +8,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class StarswarsService {
-  
-   constructor(private http: HttpClient) { }
- 
-   getProductList(): Observable<any> {
+
+  constructor(private http: HttpClient) { }
+
+  getStarwars(): Observable<any> {
     return this.http.get('http://localhost:6060/api/characters/luke');
+
   }
-   
-    
-  
+
+  getStarwars2(): Observable<any> {
+    return this.http.get('http://localhost:6060/api/characters/darth-vader');
+
+  }
+
 }
