@@ -4,12 +4,14 @@ import { StarswarsService } from './services/starswars.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { StarwarsComponent } from './components/starwars/starwars.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StarwarsComponent
+    StarwarsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
