@@ -5,13 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { StarwarsComponent } from './components/starwars/starwars.component';
 import { LoginComponent } from './login/login.component';
+import { ContenidoComponent } from './contenido/contenido.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StarwarsComponent,
-    LoginComponent
+    LoginComponent,
+    ContenidoComponent
   ],
   imports: [
     BrowserModule,
